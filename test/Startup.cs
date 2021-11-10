@@ -4,8 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Funq;
 using ServiceStack;
-using ServiceStack.Configuration;
-using test.ServiceInterface;
 
 namespace test
 {
@@ -36,7 +34,7 @@ namespace test
 
     public class AppHost : AppHostBase
     {
-        public AppHost() : base("test", typeof(MyServices).Assembly) { }
+        public AppHost() : base("test", typeof(Startup).Assembly) { }
 
         // Configure your AppHost with the necessary configuration and dependencies your App needs
         public override void Configure(Container container)

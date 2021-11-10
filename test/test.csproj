@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="ServiceInterface" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -23,8 +24,11 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.*" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.*" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.*" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
 
     <PackageReference Include="ServiceStack.Core" Version="5.*" />
+
+    <PackageReference Include="ServiceStack.Kestrel" Version="5.12.1" />
   </ItemGroup>
 
 </Project>
